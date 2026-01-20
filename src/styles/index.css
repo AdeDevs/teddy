@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Young+Serif&display=swap");
+
+* {
+  font-family: "Young Serif", sans-serif;
+  transition: 300ms;
+}
+body {
+  background: linear-gradient(135deg, #0B0B0B, #111111);
+}
+
+
+:root {
+  /* Core */
+  --bg-black: #0B0B0B;
+  --soft-black: #111111;
+
+  /* Golds */
+  --gold-main: #D4AF37;
+  /* headline gold */
+  --gold-muted: #B89B2E;
+  /* borders / accents */
+
+  /* Text */
+  --white-main: #F5F5F5;
+  --white-soft: #EDEDED;
+
+  /* Glass */
+  --gold-glass: rgba(212, 175, 55, 0.12);
+
+}
+
+.parent {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.mo-home {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  color: #fff;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(../assets/raise.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/* Overlay for soft romantic feel */
+/* .mo-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(192, 132, 252, 0.3),
+    rgba(244, 114, 182, 0.3)
+  );
+  z-index: 0;
+}
+.mo-home > * {
+  position: relative;
+  z-index: 1;
+} */
+
+header {
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+}
+
+header nav {
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  justify-content: space-between;
+  border: 1.5px solid #D4AF37;
+  background-color: rgba(212, 175, 55, 0.12);
+  backdrop-filter: blur(10px);
+  z-index: 10001;
+  font-family: "Montserrat", sans-serif;
+}
+
+header nav h1 {
+  transition: all 0.8s cubic-bezier(0, 0, 0.23, 1);
+  text-decoration: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+  90deg,
+  #D4AF37,
+  #D4AF37,
+  50%,
+  #F5F5F5 0
+);
+  background-size: 200% 100%;
+  background-position: 100%;
+  font-size: 15px;
+  text-align: left;
+  font-weight: 600;
+
+  &:hover {
+    background-position: 0;
+  }
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  padding: 5px 0;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+nav ul li {
+  transition: 0.3s ease-in-out;
+  transition-timing-function: ease-in;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+  90deg,
+  #D4AF37,
+  #D4AF37,
+  50%,
+  #F5F5F5 0
+);
+
+  background-size: 200% 100%;
+  background-position: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background-position: 0;
+  }
+}
+
+nav ul li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-image: linear-gradient(90deg, #D4AF37, #B89B2E);
+  bottom: 4px;
+  left: -1px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul li:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main div {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  padding: 5px 20px;
+  justify-content: center;
+}
+
+main div h1 {
+  font-size: 5em;
+  line-height: normal;
+  text-align: center;
+  color: #fff;
+  transition: all 0.8s cubic-bezier(0, 0, 0.23, 1);
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+  90deg,
+  #D4AF37,
+  #D4AF37,
+  50%,
+  #F5F5F5 0
+);
+  background-size: 200% 100%;
+  background-position: 100%;
+  font-weight: 800;
+  letter-spacing: 2.59px;
+
+  &:hover {
+    background-position: 0;
+  }
+}
+
+main div h1:hover {
+  background-position: 0;
+  text-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
+}
+
+
+.message {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 0 20px 10px 20px;
+  overflow: scroll;
+}
+
+.message div {
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  font-style: italic;
+  color: #F5F5F5;
+  border-radius: 10px;
+  border: 1.5px solid #B89B2E;
+  background-color: #d4af371f;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+  scrollbar-width: 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.message div p {
+  animation: scroll-vertical 30s linear;
+  font-weight: 500;
+  line-height: 30px;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mo-home {
+    background-position: center;
+  }
+
+  .scroll-content {
+    position: absolute;
+    width: 100%;
+  }
+
+  header nav h1 {
+    font-size: 14px;
+  }
+
+  main div {
+    padding: 5px 10px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  main div h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+  }
+
+  .message {
+    padding: 0 10px 10px 10px;
+  }
+
+  .message div {
+    height: 100%;
+    padding: 10px;
+  }
+
+  .message div p {
+    animation: scroll-vertical 80s linear;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header nav {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+
+  header nav ul {
+    align-self: flex-end;
+  }
+}
