@@ -6,9 +6,9 @@ export default function Message() {
             <header>
                 <nav>
                     <h1><NavLink to="/"> Congratulations Teddy</NavLink></h1>
-                    {/* <ul>
-                        <li><a href="/my-love.pdf" download>Click To Download</a></li>
-                    </ul> */}
+                    <ul>
+                        <li><a href="/teddy.pdf" download>Click To Download</a></li>
+                    </ul>
                 </nav>
             </header>
             <section className="message">
